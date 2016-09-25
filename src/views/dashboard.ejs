@@ -3,6 +3,7 @@
 <head>
     <meta charset="utf-8">
     <title>Rebute ypur repos</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="css/master.css" media="screen" title="no title">
 </head>
 <body>
@@ -16,19 +17,31 @@
 </div>
 <br>
 <br>
-<div class="container">
+<div class="fluid-container">
     <div class="centeral" style="width: 800px;">
         <h1>Dashboard</h1>
         <br>
-        <div class="desc left-align put-left">
-            <p>
-                You can find your repos here
-            </p>
+        <div class="col-md-pull-5">
+            <div class="desc left-align put-left">
+                <p>
+                    You can find your repos here
+                </p>
+                <div class="table-wrapper">
+                    <table>
+                        <tr class="rippleink"><td>Contributors</td><td class="stock-here" id="one">25</td></tr>
+                        <tr class="rippleink"><td>Previous Month</td><td class="stock-here" id="two">30</td></tr>
+                        <tr class="rippleink"><td>Monthly Funding</td><td class="stock-here" id="two">120$</td></tr>
+                        <tr class="rippleink"><td>Total Funding</td><td class="stock-here" id="two">2500$</td></tr>
+                    </table>
+                </div>
 
-            <br>
+                <br>
+            </div>
         </div>
-        <div class="graph box-400 put-right" id="piechart">
+        <div class="col-md-push-5">
+            <div class="graph box-400 put-right" id="piechart">
 
+            </div>
         </div>
         <div class="table-wrapper">
             <table>
@@ -43,6 +56,11 @@
     <br>
 </div>
 </div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="js/bootstrap.min.js"></script>
+
 <script type="text/javascript" src="js/stocks.js"></script>
 <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
 <script type="text/javascript">
