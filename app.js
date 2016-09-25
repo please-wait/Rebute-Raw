@@ -37,7 +37,14 @@ app.set('views', 'src/views');
 app.set('view engine', 'ejs');
 
 // Navigation setup
+
 app.get('/', function(req, res) {
+    res.render('login', {
+        title: 'Hello from render',
+    });
+});
+
+app.get('/dashboard', function(req, res) {
     res.render('dashboard', {
         title: 'Hello from render',
     });
