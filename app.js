@@ -43,6 +43,10 @@ app.get('/', function(req, res) {
     });
 });
 
+app.get('/reports', function(req, res) {
+    res.render('reports');
+});
+
 app.listen(port, function(err) {
     console.log('running server on port ' + port);
 });
