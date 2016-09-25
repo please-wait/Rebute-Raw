@@ -35,7 +35,7 @@
                 <tr class="rippleink"><th>name of repo</th><th>funding stat</th><th>stats</th></tr>
                 <tr class="rippleink"><td>Awesome-Lyrics</td><td>5$</td><td>Ready to Process</td></tr>
                 <tr class="rippleink"><td>PRUND</td><td>Not Integrated</td><td>Integrate Now!</td></tr>
-                <tr class="rippleink"><td>Rebute-dev</td><td>Not Integrated</td><td>Integrate Now!</td></tr>
+                <tr class="rippleink"><td>Rebute-dev</td><td>5$</td><td>Integrate Now!</td></tr>
             </table>
         </div>
     </div>
@@ -50,12 +50,10 @@
     function drawChart() {
 
         var data = google.visualization.arrayToDataTable([
-            ['Task', 'Hours per Day'],
-            ['Work',     11],
-            ['Eat',      2],
-            ['Commute',  2],
-            ['Watch TV', 2],
-            ['Sleep',    7]
+            ['Repo', 'Your Activities'],
+            ['Awesome-Lyrics',     11],
+            ['PRUND',      1],
+            ['Rebute-dev',  4],
         ]);
 
         var options = {
