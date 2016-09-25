@@ -54,6 +54,10 @@ app.get('/reports', function(req, res) {
     res.render('reports');
 });
 
+app.get('/snips', function(req, res) {
+    res.render('snips');
+});
+
 app.listen(port, function(err) {
     console.log('running server on port ' + port);
 });
