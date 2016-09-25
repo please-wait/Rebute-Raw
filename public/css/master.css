@@ -38,15 +38,15 @@ p {
 }
 
 body {
-    background-color: #e9f9fb;
+    background-color: #f0f4f5;
 }
 
 
 body {}
 
 img {
-    margin-top: 18px;
-    filter: drop-shadow(1px 2px 7px #777);
+    /*margin-top: 18px;*/
+    /*filter: drop-shadow(1px 2px 7px #777);*/
 }
 
 .desc.left-align {
@@ -125,4 +125,19 @@ input.threedigit {
 
 tr:hover {
     background-color: #e6e6e6;
+}
+
+.table-box {
+    display: inline;
+    padding: 9px;
+    border: solid #666;
+    border-radius: 10px;
+    background-color: #ccc;
+    color: #666;
+}
+
+@keyframes pulse {
+  0% {opacity: 1;}
+  50% {opacity: 0.7;}
+  100% {opacity: 1;}
 }

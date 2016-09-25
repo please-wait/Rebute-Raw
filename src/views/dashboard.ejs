@@ -33,9 +33,9 @@
         <div class="table-wrapper">
             <table>
                 <tr class="rippleink"><th>name of repo</th><th>funding stat</th><th>stats</th></tr>
-                <tr class="rippleink"><td>Awesome-Lyrics</td><td>5$</td><td>Ready to Process</td></tr>
-                <tr class="rippleink"><td>PRUND</td><td>Not Integrated</td><td>Integrate Now!</td></tr>
-                <tr class="rippleink"><td>Rebute-dev</td><td>5$</td><td>Integrate Now!</td></tr>
+                <tr class="rippleink"><td>Awesome-Lyrics</td><td class="stock-here" id="one">5$</td><td><div class="table-box" style="border-color: #005fc7; background-color: #bddaef; color: #005fc7;">Ready for processing</div></td></tr>
+                <tr class="rippleink"><td>PRUND</td><td>Not Integrated</td><td><div class="table-box" style="animation: pulse 2.2s infinite; border-color: #c76900; background-color: #ffc155; color: #c76900;">Integrate Now!</div></td></tr>
+                <tr class="rippleink"><td>Rebute-dev</td><td class="stock-here" id="two">5$</td><td><div class="table-box">Processed</div></td></tr>
             </table>
         </div>
     </div>
@@ -43,6 +43,7 @@
     <br>
 </div>
 </div>
+<script type="text/javascript" src="js/stocks.js"></script>
 <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
 <script type="text/javascript">
     google.charts.load('current', {'packages':['corechart']});
@@ -68,6 +69,10 @@
 
         chart.draw(data, options);
     }
+</script>
+<script type="text/javascript">
+  document.querySelector(".stock-here#one").innerHTML = stockStyle("$",50,"down");
+  document.querySelector(".stock-here#two").innerHTML = stockStyle("$",35,"up");
 </script>
 </body>
 </html>
